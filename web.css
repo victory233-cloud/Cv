@@ -1,0 +1,74 @@
+
+.slideshow{
+	width:100%;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+	background-color: grey;
+}
+
+
+
+.slideshow img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	object-fit: cover;
+	opacity: 0;
+	animation: fade 3s infinite;
+	margin: 0;
+	padding: 0;
+
+}
+
+.slideshow img:nth-child(1){
+	animation-delay: 0s;
+}
+
+
+.slideshow img:nth-child(2){
+	animation-delay: 2s;
+}
+
+
+@keyframes fade{
+	0% {opacity: 0; }
+	10% {opacity: 1; }
+	40% {opacity: 1; }
+	50% {opacity: 0; }
+	100% {opacity: 0; }
+}
+
+
+.text-box{
+	box-shadow:  0px 0px 20px 4px black;
+	border-radius: 10px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+.text-box2{
+	box-shadow:  0px 0px 20px 2px black;
+	border-radius: 12px;
+	padding-left: 50px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.rice-box{
+	box-shadow:  0px 0px 20px 2px black;
+	border-radius: 12px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+
+}
+.oil-box{
+	box-shadow:  0px 0px 20px 2px black;
+	border-radius: 12px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+	
+	
+
+}
